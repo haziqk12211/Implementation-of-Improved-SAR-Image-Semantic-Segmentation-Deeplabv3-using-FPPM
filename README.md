@@ -76,31 +76,28 @@ Input (RGB, 256×256)
 
 Training converged at **Epoch 28** (best checkpoint saved).
 
-### Per-Class IoU (Validation Set)
+### Per-Class IoU (Validation Set of Our Implementation)
 
-| Class | IoU |
-|---|---|
-| Background | reported |
-| Building | reported |
-| Road | reported |
-| Water | reported |
-| Barren | reported |
-| Forest | reported |
-| Agriculture | reported |
+| Class | IoU with Baseline DeepLabV3+ | IoU with Full model|
+|---|---|---|
+| Background | 41.73% | 45.90% | 
+| Building | 39.18% | 42.79% |
+| Road | 28.45% |29.90% |
+| Water | 47.18% | 54.99% |
+| Barren | 19.95% | 15.63% |
+| Forest | 26.06% | 25.66% |
+| Agriculture | 42.72% | 44.87% |
 
-> Run the final evaluation cell (`#analysis of results`) after loading the saved weights to populate the table above with your numbers.
-
-### Paper Results (for reference — SAR dataset, 5 classes)
+### Final Results of Our Implementation
 
 | Model | mIoU | Global Accuracy |
 |---|---|---|
-| Baseline DeepLabV3+ | 85.69% | 88.16% |
-| + CA attention | 86.20% | 88.79% |
-| + CA + Focal Loss | 87.50% | — |
-| + CA + Improved ASPP | 88.82% | — |
-| + All (Full model) | **90.33%** | **90.25%** |
+| Baseline DeepLabV3+ | 35.04% | 61.19% |
+| + All (Full model) | **37.11%** | **64.65%** |
 
 ---
+
+>GLobal accuracy increase is around 3%, a very similar increase to paper result with SAR dataset with 5 classes
 
 ## Project Structure
 
