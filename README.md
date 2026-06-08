@@ -97,7 +97,7 @@ Training converged at **Epoch 28** (best checkpoint saved).
 
 ---
 
->GLobal accuracy increase is around 3%, a very similar increase to paper result with SAR dataset with 5 classes
+>Global accuracy increase is around 3%, a very similar increase to paper result with SAR dataset with 5 classes
 
 ## Project Structure
 
